@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #bfdbfe;
+  color: white;
+}
+.card {
+  max-height: max-content;
+  margin: 40px 0px;
+  padding: 20px;
+  text-align: left;
+}
+.card-list{
+  padding: 0px !important;
+}
+.align-left{
+  text-align: left;
+}
+.font-bold{
+  font-weight: 500;
+}
+.grey-color{
+  color: #828282;
+}
+.circle{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #828282;
+}
+.baris {
+  font-weight: bold;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-blue{
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 30px;
+}
+
+.btn-blue:hover {
+  background-color:#3b82f6;
+  transition: 0.7s;
+  border-color: #828282;
+  border-width: 3px;
+  box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.bg-blue-light{
+  background-color: #bfdbfe;
+}

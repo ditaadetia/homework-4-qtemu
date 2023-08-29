@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .App {
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #828282;
+            color: white;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: lighter;
+        }
+        .card-description {
+            display: flex; /* Menggunakan Flexbox */
+            max-height: fit-content;
+            background-color: #c4c4c4;
+            margin: 10px;
+            padding: 10px;
+            align-items: center; /* Mengatur item secara vertikal di tengah */
+        }
+        .small-card{
+            width: 150px;
+            height: 150px;
+            background-color: #bdbdbd;
+        }
+        .detail-card {
+            display: flex;
+            flex-direction: column;
+            max-width: max-content;
+            max-height: max-content;
+        }
+        .judul{
+            font-weight: bold;
+        }
+        .row {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-top: -20px;
+        }
+        .detail{
+            margin-left:25px
+        }
+        .join-us{
+            background-color: #4f4f4f;
+            max-width: max-content;
+            padding: 3px 18px 3px 18px;
+            color: white;
+            font-size: 10px;
+        }
+        .section{
+            margin: 10px;
+            font-weight: bold;
+        }
+        .card {
+            max-height: max-content;
+            background-color: #c4c4c4;
+            margin: 20px;
+            padding: 10px;
+        }
+        .text{
+            font-size: 12px;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: #828282;
+            margin-right: 10px;
+        }
+        .baris {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+        .card-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            margin-right: 10px;
+        }
+
+        .card-item {
+            flex: 0 0 calc(33.33% - 35px);
+            background-color: #c4c4c4;
+            padding: 10px;
+            max-height: fit-content;
+        }
+        .span{
+            color: #828282;
+        }
+        .button-view{
+            background-color: #828282;
+            max-width: max-content;
+            padding: 5px 12px 5px 12px;
+            color: white;
+            font-size: 10px;
+        }
+        .copyright{
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            margin:20px
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <div class="nav-links">
+            <button class="nav-button">
+              <div class="logo">QTemu</div>
+            </button>
+            <button class="nav-button">Create Meetup</button>
+            <button class="nav-button">Explore</button>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <button class="nav-button">Login</button>
+        </div>
+    </nav>
+    <div class="card-description">
+        <div class="small-card"></div>
+        <div class="detail-card" style="margin-left: 10px;">
+            <p class="judul">Hacktiv8 Meetup</p>
+            <div class="row">
+                <div class="judul-detail">
+                    <p>Location</p>
+                    <p>Members</p>
+                    <p>Organizers</p>
+                </div>
+                <div class="detail">
+                    <p>Jakarta, Indonesia</p>
+                    <p>1,078</p>
+                    <p>Adhy Wiranata</p>
+                </div>
+            </div>
+            <button class="join-us">Join Us</button>
+        </div>
+    </div>
+    <div class="section">
+        <p>Next Meetup</p>
+        <div class="card">
+            <p>Awesome meetup and event</p>
+            <p style="color: #a7a7a7;">25 January 2019</p>
+            <p class="text">Hello, Javascript & Node.js Ninjas
+                <br>
+                Get ready for our montly meetup JakartaJs!This will be our fifth meetup of 2018! <br>
+                The meetup format will contain some short stories and technical talks. <br>
+                If you have a short announcement you'd like to share with the audience, you may do so during open mic announcements. <br>
+                Remember to bring a photo ID to get through building security.
+            </p>
+            <p>-----</p>
+            <p class="text">See you there!</p>
+            <p class="text">Best,hengki, Giovanni, Sofian, Riza, Agung The JakartaJS Organizers</p>
+        </div>
+    </div>
+    <div class="section">
+        <p>About Meetup</p>
+        <p class="text" style="margin-left:20px">
+            Come and meet other developers interested in the JavaScript and it's library in the Greater jakarta area. <br>
+            Twitter: @jakartaJS and we use the hashtag #jakartajs
+        </p>
+    </div>
+    <div class="section">
+        <div class="baris">
+            <p>Members</p>
+            <p>See all</p>
+        </div>
+        <div class="card-description" style="margin-left: 20px;">
+            <div class="circle"></div>
+            <div class="detail-card">
+                <p class="judul">Organizers</p>
+                <div class="row">
+                    <div class="judul-detail">
+                        <p>Adhy Winata</p>
+                    </div>
+                    <div class="detail">
+                        <p>4 others.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="baris">
+            <p>Past Meetups</p>
+            <p>See all</p>
+        </div>
+        <div class="card-list" style="margin-left: 20px;">
+            <div class="card-item">
+                <p>27 November 2017</p>
+                <hr color="#828282">
+                <p>#39 JakartaJS April Meetup with kumparan</p>
+                <p>139 <span class="span">went</span></p>
+                <button class="button-view">View</button>
+            </div>
+            <div class="card-item">
+                <p>27 October 2017</p>
+                <hr color="#828282">
+                <p>#38 JakartaJS April Meetup with BliBli</p>
+                <p>113 <span class="span">went</span></p>
+                <button class="button-view">View</button>
+            </div>
+            <div class="card-item">
+                <p>27 September 2017</p>
+                <hr color="#828282">
+                <p>#37 JakartaJS April Meetup with Hacktiv8</p>
+                <p>110 <span class="span">went</span></p>
+                <button class="button-view">View</button>
+            </div>
+        </div>
+    </div>
+    <hr style="margin:20px">
+    <p class="copyright">Copyright Hacktiv8 2028</p>
+</body>
+</html>
